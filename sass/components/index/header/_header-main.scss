@@ -1,0 +1,27 @@
+.header {
+  background-color: getColor('wite-color');
+  border-bottom: 1px solid #ececec;
+  a {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+
+.header .list {
+  padding-left: 0;
+}
+
+.header__container {
+  height: 78.75px;
+  padding-left: 15px;
+}
+.header__container,
+.navigation,
+.list {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+.header__container {
+  padding-left: 15px;
+}

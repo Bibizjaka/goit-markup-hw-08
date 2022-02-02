@@ -1,0 +1,118 @@
+.portfolio-projects-list {
+  flex-wrap: wrap;
+}
+.portfolio-projects-list__title {
+  color: getColor('title');
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: 0.06em;
+}
+.portfolio-projects-list__description {
+  color: getColor('main-text');
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+.portfolio-projects-list__items {
+  a {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.portfolio-projects-list__items {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-projects-list__img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-projects-list__img::before {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: getColor('accent-overlay');
+
+  transform: translateY(101%);
+  transition: transform 250ms getAnimations('animation-style');
+}
+.portfolio-projects-list__img {
+  p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(101%);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+
+    color: getColor('wite');
+    padding: 63px 24px;
+    transition: transform 250ms getAnimations('animation-style');
+  }
+}
+.portfolio-projects-list__items .link:hover ::before {
+  transform: translateY(0);
+}
+.portfolio-projects-list__items .link:hover .portfolio-projects-list__img p {
+  transform: translateY(0);
+}
+
+.portfolio-projects-list__items .link:hover,
+.portfolio-projects-list__items .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms getAnimations('animation-style');
+}
+
+.portfolio-projects-list__items:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-projects-list __items:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-projects-list__items .link {
+  background-color: getColor('wite');
+  text-align: center;
+}
+
+.portfolio-projects-list__items .portfolio-projects-list__card {
+  border-bottom: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+}
+
+.portfolio-projects-list__card {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+}
+.portfolio-projects-list__title {
+  margin-bottom: 4px;
+}

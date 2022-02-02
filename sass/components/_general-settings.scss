@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: solid 1px teal; */
+  /* background-color: tomato; */
+}
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+body {
+  background-color: getColor('wite');
+  color: getColor('main-text');
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.img,
+.link {
+  display: block;
+}
+
+.container .list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.link,
+.portfolio-projects-list {
+  text-decoration: none;
+}
+.portfolio-projects-list__items {
+  display: inline-block;
+}

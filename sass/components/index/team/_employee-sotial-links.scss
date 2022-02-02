@@ -1,0 +1,28 @@
+.employee-info__link-item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  fill: getColor('icon');
+}
+.employee-info__social-links {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: getColor('wite');
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms getAnimations('animation-style');
+}
+
+.employee-info__social-links:hover,
+.employee-info__social-links:focus {
+  background-color: getColor('accent');
+}
+.employee-info__social-links:hover .employee-info__link-item,
+.employee-info__social-links:focus .employee-info__link-item {
+  fill: getColor('wite');
+}
+.employee-info__icon-link:not(:last-child) {
+  margin-right: 10px;
+}
