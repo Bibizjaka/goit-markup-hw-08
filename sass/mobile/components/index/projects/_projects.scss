@@ -1,0 +1,41 @@
+.projects__title,
+.team__title {
+  color: getColor('title');
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.8;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.projects .list {
+  flex-wrap: wrap;
+}
+.projects__img {
+  position: relative;
+  line-height: 0;
+}
+.projects__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding-bottom: 27px;
+  padding-top: 27px;
+  padding-left: auto;
+  padding-right: auto;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: getColor('wite');
+  background-color: getColor('overlay-color');
+}

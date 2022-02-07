@@ -1,0 +1,27 @@
+$colors: (
+  'hero-footer': #2f303a,
+  'team-background': #f5f4fa,
+  'main-text': #757575,
+  'accent': #2196f3,
+  'accent-overlay': rgba(33, 150, 243, 0.9),
+  'title': #212121,
+  'wite': #fff,
+  'footer-contacts': rgba(255, 255, 255, 0.6),
+  'footer-sotial-links': rgba(255, 255, 255, 0.1),
+  'background': #e5e5e5,
+  'border': #eeeeee,
+  'icon': #afb1b8,
+  'overlay': rgba(47, 48, 58, 0.8),
+  'button-hover': #188ce8,
+  'backdrop': rgba(0, 0, 0, 0.2),
+);
+$animations: (
+  'animation-style': cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+@function getAnimations($key) {
+  @return map-get($animations, $key);
+}
