@@ -1,8 +1,14 @@
 .employee-info__link-item {
-  // display: flex;
-  // justify-content: center;
-  // text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   fill: getColor('icon');
+}
+
+.employee-info__social-links-list .list {
+  display: flex;
+  justify-content: center;
+  // margin-left: 10px;
 }
 .employee-info__social-links {
   display: flex;
@@ -13,6 +19,7 @@
   justify-content: center;
   align-items: center;
   transition: background-color 250ms getAnimations('animation-style');
+  // margin-right: 10px;
 }
 
 .employee-info__social-links:hover,

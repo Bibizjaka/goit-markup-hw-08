@@ -7,15 +7,15 @@
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: url(../../../img/responsive-img-mobile/studio-mobile/Header-img-min.jpg);
+  // background-image: url(../../../../../img/index-images/igor_demianenko.jpg);
 }
 .overlay {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/index-images/hero-cover.jpg);
+    url(../../../img/responsive-img-mobile/portfolio-mobile/headphones-min.jpg);
   background-size: cover;
   background-position: center;
-  max-width: 1600px;
-  max-height: 600px;
+  // max-width: 1600px;
+  // max-height: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -32,7 +32,7 @@
 
   margin-top: 0;
   margin-bottom: 30px;
-  width: 696px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
