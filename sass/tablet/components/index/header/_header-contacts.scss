@@ -1,0 +1,31 @@
+.header__contacts {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.header__contacts {
+  color: getColor('main-text');
+  transition: color 250ms getAnimations('animation-style');
+}
+.header__contacts:hover,
+.header__contacts:focus {
+  color: getColor('accent');
+  fill: getColor('accent');
+}
+.header__nav .list:not(:first-child) {
+  margin-left: 50px;
+}
+.navgation__link:hover,
+.navgation__link:focus {
+  color: getColor('accent');
+}
+
+.header__icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: -1px;
+  fill: currentColor;
+}

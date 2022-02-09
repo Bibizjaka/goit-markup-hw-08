@@ -4,45 +4,38 @@
 }
 .hero {
   padding: 0;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
-  // background-image: url(../../../../../img/responsive-img-mobile/studio-mobile/Header-img.jpg);
+  background-image: url(../img/index-images/);
 }
 .overlay {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../../../../img/responsive-img-mobile/studio-mobile/Hero-img-min.jpg);
-  background-size: 480px 400px;
-  width: 480px;
-  height: 400px;
-  // background-position: center;
-  // max-width: 1600px;
-  // max-height: 600px;
+    url(../img/index-images/hero-cover.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and(min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../../../img/responsive-img-mobile/studio-mobile/Hero-img2x-min.jpg);
-  }
-}
+
 .hero__title {
+  color: getColor('wite');
+
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.6;
+  font-size: 44px;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: getColor('wite');
 
   margin-top: 0;
   margin-bottom: 30px;
-  max-width: 480px;
+  width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .hero__button {
   background-color: getColor('accent');
   color: getColor('wite');
