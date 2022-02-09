@@ -18,6 +18,7 @@
 
 .features .list {
   padding: 0;
+  flex-direction: column;
 }
 .features.features__item {
   width: 270px;
@@ -44,7 +45,7 @@
 // .projects__item:not(:first-child) {
 //   margin-left: 30px;
 // }
-
+//
 .features__bg {
   display: flex;
   background-color: getColor('team-background');
