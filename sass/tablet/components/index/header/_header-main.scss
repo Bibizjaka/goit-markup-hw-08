@@ -1,10 +1,6 @@
 .header {
   background-color: getColor('wite-color');
   border-bottom: 1px solid #ececec;
-  a {
-    padding-bottom: 32px;
-    padding-top: 32px;
-  }
 }
 
 .header .list {
@@ -24,9 +20,4 @@
 }
 .header__container {
   padding-left: 15px;
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu-button {
-    display: none;
-  }
 }

@@ -4,22 +4,26 @@
 }
 .hero {
   padding: 0;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   background-image: url(../img/index-images/);
 }
 .overlay {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/index-images/hero-cover.jpg);
+    url(../../../../../img/responsive-img-tablet/studio-tablet/Hero-min.jpg);
   background-size: cover;
-  background-position: center;
-  max-width: 1600px;
-  max-height: 600px;
+  width: 768px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
 }
-
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../../../../img/responsive-img-tablet/studio-tablet/Hero2x-min.jpg);
+  }
+}
 .hero__title {
   color: getColor('wite');
 

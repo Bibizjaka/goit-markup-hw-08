@@ -11,15 +11,20 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.features {
-  padding-bottom: 0;
-}
+// .features {
+//   padding-bottom: 0;
+// }
 
 .features .list {
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
-.features.features__item {
-  width: 270px;
+.features__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 60px) / 2);
 }
 .features p {
   margin-bottom: 0;
@@ -46,7 +51,7 @@
 .features__bg {
   display: flex;
   background-color: getColor('team-background');
-  width: 270px;
+  width: 354px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;

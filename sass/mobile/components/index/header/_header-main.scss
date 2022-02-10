@@ -26,15 +26,3 @@
 .header__container {
   padding-left: 15px;
 }
-
-@media screen and (max-width: 767px) {
-  .header__contacts,
-  .header__nav .list,
-  .navgation__link,
-  .header__icon {
-    display: none;
-  }
-  .header__container {
-    height: 60px;
-  }
-}

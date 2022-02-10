@@ -24,6 +24,10 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 .team__item {
   background-color: getColor('wite');
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -32,6 +36,10 @@
 }
 .team__item:not(:first-child) {
   margin-left: 30px;
+}
+.team__item {
+  width: 354px;
+  height: 536px;
 }
 .team__item {
   p {
