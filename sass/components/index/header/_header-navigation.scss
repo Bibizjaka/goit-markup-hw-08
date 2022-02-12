@@ -8,6 +8,11 @@
   @media screen and(min-width:320px) {
     display: none;
   }
+  @media screen and(min-width:768px) {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 .navigation__web,
@@ -18,13 +23,54 @@
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  @media screen and(min-width:320px) {
-    font-size: 24px;
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
     line-height: 1.1;
   }
+}
+.navigation__studio {
+  color: black;
+}
+
+.navgation__link {
+  position: relative;
+  color: getColor('title');
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms getAnimations('animation-style');
+}
+.navigation__link {
+  margin: 0;
+  @media screen and(min-width:768px) {
+    margin-right: 88px;
+    padding-bottom: 26px;
+    padding-top: 26px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-right: 93px;
+    padding-left: 15px;
+  }
+}
+
+.navigation__line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 71px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: getColor('accent');
+}
+
+.navgation__link--color {
+  color: getColor('accent');
 }
 @media screen and(min-width:320px) {
   .header {
@@ -41,6 +87,9 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    @media screen and(min-width:768px) {
+      display: none;
+    }
   }
   .mobile-menu-button:hover {
     fill: getColor('accent');
@@ -160,48 +209,4 @@
   .menu-container.is-open {
     transform: translateX(0);
   }
-}
-.navigation__studio {
-  color: black;
-}
-.header__nav {
-  display: flex;
-  margin-left: auto;
-  @media screen and(min-width:320px) {
-    display: none;
-  }
-}
-
-.navgation__link {
-  position: relative;
-  color: getColor('title');
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color 250ms getAnimations('animation-style');
-}
-.navigation__link {
-  margin: 0;
-
-  @media screen and(min-width:1200px) {
-    margin-right: 93px;
-    padding-left: 15px;
-  }
-}
-
-.navigation__line::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: getColor('accent');
-}
-
-.navgation__link--color {
-  color: getColor('accent');
 }

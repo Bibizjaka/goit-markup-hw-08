@@ -1,5 +1,9 @@
 .portfolio-projects-list {
   flex-wrap: wrap;
+  @media screen and(min-width:768px) {
+    margin-left: -30;
+    margin-top: -30;
+  }
 }
 .portfolio-projects-list__title {
   color: getColor('title');
@@ -37,8 +41,10 @@
 .portfolio-projects-list__items {
   margin-right: 0;
   margin-bottom: 30px;
-  @media screen and(min-width:1200px) {
-    margin-right: 30px;
+  @media screen and(min-width:768px) {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 .portfolio-projects-list__img {

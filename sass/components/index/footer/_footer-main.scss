@@ -77,3 +77,9 @@
 .footer-contacts:focus {
   color: getColor('wite');
 }
+@media screen and(min-width:768px) {
+  .tablet-container {
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -5,6 +5,10 @@
   a {
     padding-bottom: 32px;
     padding-top: 32px;
+    @media screen and(min-width:768px) {
+      padding-bottom: 26px;
+      padding-top: 26px;
+    }
   }
 }
 
@@ -16,6 +20,9 @@
   height: 59px;
 
   padding-left: 15px;
+  @media screen and(min-width:768px) {
+    height: 80px;
+  }
   @media screen and(min-width:1200px) {
     height: 78.75px;
   }

@@ -14,8 +14,24 @@
   color: getColor('accent');
   fill: getColor('accent');
 }
+.header__nav {
+  display: none;
+
+  margin-left: auto;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    a {
+      padding: 0;
+    }
+  }
+}
 .header__nav .list:not(:first-child) {
   margin-left: 50px;
+  @media screen and(min-width:768px) {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 .navgation__link:hover,
 .navgation__link:focus {
