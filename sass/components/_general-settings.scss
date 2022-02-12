@@ -10,15 +10,35 @@ p {
 }
 .container {
   margin: 0 auto;
-  width: 1200px;
+  // width: 100%;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: solid 1px teal; */
   /* background-color: tomato; */
+  // @media screen and(min-width:320px) {
+  //   width: 480px;
+  // }
+  @media screen and(min-width:760px) {
+    max-width: 760px;
+  }
+  @media screen and(min-width:1200px) {
+    max-width: 1200px;
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 90px;
+  padding-top: 90px;
+  @media screen and(min-width:1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 body {
   background-color: getColor('wite');
