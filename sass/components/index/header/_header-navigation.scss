@@ -34,7 +34,9 @@
 .navigation__studio {
   color: black;
 }
-
+.logo {
+  padding-left: 15px;
+}
 .navgation__link {
   position: relative;
   color: getColor('title');
@@ -47,6 +49,7 @@
 }
 .navigation__link {
   margin: 0;
+
   @media screen and(min-width:768px) {
     margin-right: 88px;
     padding-bottom: 26px;
@@ -101,11 +104,14 @@
   }
 
   .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 796px;
+    height: 100vh;
     background-color: #fff;
     text-align: center;
     transform: translateX(200%);
@@ -119,7 +125,7 @@
     .container-nav {
       padding-top: 48px;
       padding-left: 40px;
-      margin-bottom: 302px;
+      // margin-bottom: 302px;
     }
     .container-nav__items {
       list-style: none;
@@ -173,10 +179,12 @@
       color: getColor('main-text');
     }
     .sotial-links-container {
-      padding-left: 40px;
+      padding-left: auto;
+      padding-right: auto;
 
       &__list {
         display: flex;
+        justify-content: center;
       }
     }
     .sotial-links-container__item {

@@ -2,6 +2,7 @@
   flex-wrap: wrap;
   margin-bottom: 46px;
   justify-content: flex-start;
+  align-items: baseline;
   li:not(:nth-last-child(-n + 2)) {
     margin-bottom: 15px;
   }

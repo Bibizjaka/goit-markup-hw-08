@@ -16,7 +16,7 @@
 }
 .overlay {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../../../img/responsive-img-mobile/studio-mobile/Hero-img-min.jpg);
+    url(../img/responsive-img-mobile/studio-mobile/Hero-img-min.jpg);
   background-size: cover;
   background-position: center;
   min-width: 100%;
@@ -25,13 +25,13 @@
   margin-right: auto;
   @media screen and(min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../../img/responsive-img-mobile/studio-mobile/Hero-img2x-min.jpg);
+      url(../img/responsive-img-mobile/studio-mobile/Hero-img2x-min.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .overlay {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../../img/responsive-img-tablet/studio-tablet/hero-min.jpg);
+      url(../img/responsive-img-tablet/studio-tablet/hero-min.jpg);
     background-size: cover;
     background-position: center;
     max-width: 768px;
@@ -43,13 +43,13 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../../../img/responsive-img-tablet/studio-tablet/hero2x-min.jpg);
+        url(../img/responsive-img-tablet/studio-tablet/hero2x-min.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
     .overlay {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../../../img/responsive-img-desktop/studio-desktop/hero-Img-min.jpg);
+        url(../img/responsive-img-desktop/studio-desktop/hero-Img-min.jpg);
       background-size: cover;
       background-position: center;
       max-width: 1600px;
@@ -61,7 +61,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(../../../../img/responsive-img-desktop/studio-desktop/hero-Img2x-min.jpg);
+          url(../img/responsive-img-desktop/studio-desktop/hero-Img2x-min.jpg);
       }
     }
   }
