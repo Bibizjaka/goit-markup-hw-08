@@ -257,19 +257,50 @@
           <ul class="list">
             <li class="projects__item">
               <div class="projects__img">
-                <img src="./img/index-images/keyboard.jpg" alt="клавиатура" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/responsive-img-desktop/studio-desktop/keyboard-img-min.jpg   1x,
+                      ./img/responsive-img-desktop/studio-desktop/keyboard-img2x-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./img/index-images/keyboard.jpg" alt="клавиатура" />
+
+                  /></picture
+                >
+
                 <p class="projects__info">Десктопные приложения</p>
               </div>
             </li>
             <li class="projects__item">
               <div class="projects__img">
-                <img src="./img/index-images/laptop.jpg" alt="ноутбук" width="370" />
+                <picture
+                  ><source
+                    srcset="
+                      ./img/responsive-img-desktop/studio-desktop/laptop-img-min.jpg   1x,
+                      ./img/responsive-img-desktop/studio-desktop/laptop-img2x-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./img/index-images/laptop.jpg" alt="ноутбук" />
+                </picture>
+
                 <p class="projects__info">Мобильные приложения</p>
               </div>
             </li>
             <li class="projects__item">
               <div class="projects__img">
-                <img src="./img/index-images/tablet.jpg" alt="планшет" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./img/responsive-img-desktop/studio-desktop/tablet-img-min.jpg   1x,
+                      ./img/responsive-img-desktop/studio-desktop/tablet-img2x-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./img/index-images/tablet.jpg" alt="планшет" width="370" />
+                </picture>
                 <p class="projects__info">Дизайнерские решения</p>
               </div>
             </li>
@@ -285,10 +316,10 @@
               <picture>
                 <source
                   srcset="
-                    ./img/responsive-img-mobile/studio-mobile/ihor-demianenko-min.jpg   1x,
-                    ./img/responsive-img-mobile/studio-mobile/ihor-demianenko2x-min.jpg 2x
+                    ./img/responsive-img-desktop/studio-desktop/ihor-demianenko-min.jpg   1x,
+                    ./img/responsive-img-desktop/studio-desktop/ihor-demianenkox2-min.jpg 2x
                   "
-                  media="(min-width:320px)" />
+                  media="(min-width:1200px)" />
                 <source
                   srcset="
                     ./img/responsive-img-tablet/studio-tablet/igor-demianenko-min.jpg   1x,
@@ -297,10 +328,10 @@
                   media="(min-width:760px)" />
                 <source
                   srcset="
-                    ./img/responsive-img-desktop/studio-desktop/ihor-demianenko-min.jpg   1x,
-                    ./img/responsive-img-desktop/studio-desktop/ihor-demianenkox2-min.jpg 2x
+                    ./img/responsive-img-mobile/studio-mobile/ihor-demianenko-min.jpg   1x,
+                    ./img/responsive-img-mobile/studio-mobile/ihor-demianenko2x-min.jpg 2x
                   "
-                  media="(min-width:1200px)" />
+                  media="(min-width:320px)" />
 
                 <img
                   class="img"

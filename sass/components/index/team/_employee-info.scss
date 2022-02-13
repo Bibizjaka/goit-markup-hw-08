@@ -12,6 +12,9 @@ p {
   font-size: 28px;
   line-height: 1.1;
   margin-bottom: 30px;
+  @media screen and(min-width:1200px) {
+    font-size: 36px;
+  }
 }
 .team-list {
   display: block;
@@ -20,6 +23,9 @@ p {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
+  }
+  @media screen and(min-width:1200px) {
+    flex-wrap: nowrap;
   }
 }
 .team__item {

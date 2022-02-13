@@ -1,8 +1,19 @@
 .portfolio-projects-list {
   flex-wrap: wrap;
+  justify-content: center;
   @media screen and(min-width:768px) {
     margin-left: -30;
     margin-top: -30;
+    // flex-direction: column;
+    // flex-grow: 1;
+    height: 100%;
+  }
+}
+.portfolio-projects-list__title {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 }
 .portfolio-projects-list__title {
@@ -47,6 +58,7 @@
     flex-basis: calc((100% - 60px) / 2);
   }
 }
+
 .portfolio-projects-list__img {
   position: relative;
   overflow: hidden;

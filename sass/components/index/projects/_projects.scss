@@ -20,7 +20,7 @@
 }
 .projects__info {
   position: absolute;
-  bottom: 0;
+  bottom: -16px;
   left: 0;
   width: 100%;
   height: 70px;
@@ -39,11 +39,11 @@
   color: getColor('wite');
   background-color: getColor('overlay');
 }
-.projects {
-  display: none;
+.projects__item:not(:first-child) {
+  margin-left: 30px;
 }
-@media screen and(min-width:1200px) {
+@media screen and(min-width:320px) and (max-width: 1199px) {
   .projects {
-    display: block;
+    display: none;
   }
 }

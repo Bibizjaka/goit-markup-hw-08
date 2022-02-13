@@ -25,6 +25,8 @@
   }
   @media screen and(min-width:1200px) {
     padding: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
   }
 }
 .features.features__item {
@@ -47,8 +49,7 @@
   margin-top: 0;
 }
 
-.features__item,
-.projects__item:not(:first-child) {
+.features__item {
   margin-left: 0;
   margin-bottom: 30px;
   @media screen and(min-width:768px) {
@@ -57,7 +58,8 @@
     flex-basis: calc((100% - 60px) / 2);
   }
   @media screen and(min-width:1200px) {
-    margin-left: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 

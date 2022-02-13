@@ -25,6 +25,14 @@
       padding: 0;
     }
   }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 .header__nav .list:not(:first-child) {
   margin-left: 50px;
@@ -32,12 +40,20 @@
     margin-left: 0;
     margin-top: 10px;
   }
+  @media screen and(min-width:1200px) {
+    margin-left: 50px;
+    margin-top: 0;
+  }
 }
 .navgation__link:hover,
 .navgation__link:focus {
   color: getColor('accent');
 }
-
+// @media screen and(min-width:1200px) {
+//   .navgation__link {
+//     margin-left: 15px;
+//   }
+// }
 .header__icon {
   display: inline-flex;
   align-items: center;
