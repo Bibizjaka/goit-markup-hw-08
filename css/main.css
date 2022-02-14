@@ -1744,6 +1744,10 @@ p {
   }
 }
 
+.portfolio-projects-list__items {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-projects-list__items {
     margin-left: 30px;
@@ -1760,6 +1764,10 @@ p {
     -ms-flex-preferred-size: calc((100% - 90px) / 3);
         flex-basis: calc((100% - 90px) / 3);
   }
+}
+
+.portfolio-projects-list__items:last-child {
+  margin-bottom: 0;
 }
 
 .portfolio-projects-list__title {
